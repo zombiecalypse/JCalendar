@@ -1,0 +1,39 @@
+# Extracted from https://github.com/ulrich/macaron-factory/blob/master/.gitignore
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
+
+# Ignore Play! working directory #
+db
+eclipse
+log
+logs
+precompiled
+tmp
+test-result
+eclipse
+server.pid
+*.class.*
+!.gitignore
+*~
+
+# KDE
+.directory
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# CDT-specific
+.cproject
