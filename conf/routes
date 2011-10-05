@@ -5,6 +5,10 @@
 # Home page
 GET     /                                       Application.index
 
+GET		/calendars/{id}/							Calendars.show
+GET		/calendars/									Calendars.index
+GET		/calendars/{id}/{year}/{month}				Calendars.show				
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
@@ -15,5 +19,8 @@ GET     /public/                                staticDir:public
 #Administration
 *			/admin																		module:crud
 
+# Import Secure routes
+*       /                                       module:secure
+
 # Catch all
-*       /{controller}/{action}                  {controller}.{action}
+# *       /{controller}/{action}                  {controller}.{action}

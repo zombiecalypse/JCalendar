@@ -1,0 +1,13 @@
+User(zombiecalypse):
+    name: "Zombiecalypse"
+    
+Calendar(zombielendar):
+    owner: zombiecalypse
+    name: "Zombielendar"
+    
+Event(feast):
+    calendar: zombielendar
+    visible: true
+    name: "The Feasting"
+    startDate: 2001-09-09/01:46
+    endDate: 2001-09-09/01:47

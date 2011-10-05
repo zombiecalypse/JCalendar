@@ -1,0 +1,12 @@
+#{extends 'main.html' /}
+
+#{set title: "Calendar"/}
+
+<h1>Calendars</h1>
+<ul>
+	#{list items:calendars, as:'calendar'}
+		<li>#{a @show(calendar.id)}${calendar.name}#{/a}
+	#{/list}
+</ul>
+	
+

@@ -1,0 +1,14 @@
+#{extends "main.html" /}
+
+<h1>${calendar.name}</h1>
+
+<h2>${shownMonth.toString("YYYY/MM")}</h2>
+<table>
+	#{list items:events, as:'event'}
+		<tr>
+			<td>${event.name}</td>
+			<td>${event.startDate.toString("hh:mm")}</td>
+			<td>${event.endDate.toString("hh:mm")}</td>
+		</tr>
+	#{/list}
+</table>

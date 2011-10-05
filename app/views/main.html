@@ -11,6 +11,24 @@
         #{get 'moreScripts' /}
     </head>
     <body>
-        #{doLayout /}
+		<header>
+			<nav>
+				<ol>
+					<li>#{a @Application.index()}Cal#{/a}
+					<li>#{a @Calendars.index()}Calendars#{/a}
+				</ol>
+			</nav>
+			<div class="login">
+				#{if user}
+					Logged in as ${user.getName()}
+				#{/if}
+				#{else}
+					#{a @Secure.login()}Login#{/a}
+				#{/else}
+			</div>
+		</header>
+		<article>
+        	#{doLayout /}
+        </article>
     </body>
 </html>
