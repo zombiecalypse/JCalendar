@@ -7,8 +7,10 @@
 	#{list items:events, as:'event'}
 		<tr>
 			<td>${event.name}</td>
-			<td>${event.startDate.toString("hh:mm")}</td>
-			<td>${event.endDate.toString("hh:mm")}</td>
+			<td>${event.startDate?.toString("hh:mm")}</td>
+			<td>${event.endDate?.toString("hh:mm")}</td>
+			<td>#{a @Events.edit(calendar.id, event.id)}Edit#{/a}</td>
 		</tr>
 	#{/list}
 </table>
+#{a @createEvent(calendar.id)}Create#{/a}

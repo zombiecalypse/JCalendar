@@ -1,0 +1,5 @@
+#{extends "main.html"/}
+<p>#{a @Calendars.show(calendar.id)}Back#{/a}
+#{form @Events.make(calendar.id)}
+	#{eventForm event: event /}
+#{/form}

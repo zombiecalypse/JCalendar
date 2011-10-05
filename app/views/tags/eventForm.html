@@ -1,0 +1,25 @@
+<p>
+#{field 'title'}
+	<label for="title">Title</label>
+	<input type="text" id="title" name="${field.name}" value="${_event?.name}"/>
+	<span class="error">#{error 'event.name' /}</span>
+#{/field}
+<p>
+#{field 'start'}
+	<label for="start">Start Time</label>
+	<input type="datetime" name="${field.name}" id="start" value="${_event?.startDate}"/>
+	<span class="error">#{error 'event.startDate' /}</span>
+#{/field}
+<p>
+#{field 'end'}
+	<label for="end">End Time</label>
+	<input type="datetime" name="${field.name}" id="end" value="${_event?.endDate}"/>
+	<span class="error">#{error 'event.endDate' /}</span>
+#{/field}
+<p>
+#{field 'visibility'}
+	<label for="visibility">Make Public</label>
+	<input type="checkbox" name="${field.name}" id="visibility" value="${_event?.visible}"/>
+	<span class="error">#{error 'event.visible' /}</span>
+#{/field}
+<p><input type="submit" value="Submit" />
