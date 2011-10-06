@@ -1,0 +1,65 @@
+header {
+	position:absolute;
+	left: 5em;
+	height: 10em;
+	width: 100%;
+}
+header nav {
+	position:absolute;
+	left:30%;
+	top:0;
+}
+
+article {
+	background: #AAA;
+	position: absolute;
+	top: 10em;
+	width: 50em;
+	left: 10em;
+	padding: 1em;
+}
+
+.login {
+	position: fixed;
+	right:0;
+	top:0;
+	text-align: right;
+	width: 10%;
+	height: 2em;
+	background: #444;
+}
+.login a {
+	color: #FFF;
+}
+
+nav#sitenav {
+	font-size:x-large;
+	font-variant: small-caps;
+}
+header nav ol li a {
+	text-decoration: none;
+}
+nav ol li a:hover {
+	background: #000;
+	color: #FFF;
+}
+
+nav ol li {
+	display: inline;
+}
+
+form p {
+	width: 30em;
+	min-height: 2em;
+}
+form p label {
+	width: 25%;
+	display: block;
+	float: left;
+}
+form p input {
+	width: 73%;
+	float: right;
+	display: block;
+}
+	

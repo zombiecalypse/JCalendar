@@ -5,9 +5,15 @@ Calendar(zombielendar):
     owner: zombiecalypse
     name: "Zombielendar"
     
-Event(feast):
+Event(noms):
     calendar: zombielendar
     visible: true
-    name: "The Feasting"
-    startDate: 2001-09-09/01:46
-    endDate: 2001-09-09/01:47
+    name: "Noms w/ Bianca"
+    startDate: 2011-10-09/11:45
+    endDate: 2011-10-09/13:00
+Event(ese):
+    calendar: zombielendar
+    visible: false
+    name: "Ese Exercise"
+    startDate: 2011-10-5/15:00
+    endDate: 2011-10-5/16:00
